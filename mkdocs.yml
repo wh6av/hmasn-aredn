@@ -1,0 +1,124 @@
+site_name: HMASN Wiki
+site_url: https://wh6av.github.io/hmasn-aredn
+repo_url: https://github.com/wh6av/hmasn-aredn
+theme:
+  name: 'material'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: light
+      primary: 'amber'
+      accent: 'orange'
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Embrace the dark side
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: 'deep orange'
+      accent: 'amber'
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  # features:
+  #   - navigation.expand
+
+markdown_extensions:
+  - admonition
+  #- def_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+nav:
+  - Welcome!: index.md
+
+  - Main Website: https://hmasn.com
+
+  - Frequently Asked Questions: General/user_guides/faq.md
+
+  - Policies:
+    - Terms of Service: General/coming-soon.md
+    - User Agreement: General/coming-soon.md
+    - HOIP Allstar System Rules: General/Policies/hoip-allstar.md
+  
+  - General User Guides:
+    - Getting Started: General/user_guides/getting-started.md
+    - Finding Help: General/user_guides/support.md
+    - Joining our Chat Servers: General/user_guides/chat-services.md
+    - Our Social Media: General/user_guides/social-media.md
+  
+  - HOIP Reference Lists:
+    - Conference Bridge Reference: other/conference-bridge-list.md
+    - RF-Link Reference: other/rf-links-list.md
+    - Test Phone Numbers: other/test-numbers.md
+
+  - Linked VOIP Networks:
+    - Calling the AmateurWire Network: General/other_systems/amateurwire.md
+    - Calling the MeshPhone Network: General/other_systems/meshphone.md
+    - Calling the OARC Network: General/other_systems/oarc.md
+    - Calling the HamPhone Italia Network: General/other_systems/hamphone-italia.md
+  - Audio Services: 
+    - Configure Audio Services: General/coming-soon.md
+    - DAPNET Paging Gateway: General/audio_services/dapnet_gateway.md
+  - Configuration Guides:
+    - Endpoints:
+      - Hard Phones:
+        - Cisco:
+          - Cisco 504G: endpoints/hard_phones/cisco504g.md
+          - Cisco 525g: endpoints/hard_phones/Cisco525.md
+        - Avaya:
+          - Avaya 96xx Series: endpoints/hard_phones/avaya96xx.md
+        - Polycom:
+          - Polycom VVX4xx Series: endpoints/hard_phones/PolycomVVX4xx.md
+      - Soft Phones: 
+        - Groundwire: endpoints/soft_phones/groundwire.md
+        - Jami: endpoints/soft_phones/jami.md
+        - Zoiper: endpoints/soft_phones/zoiper.md
+      - PBX Trunks:
+        - FreePBX: 
+          - Configure FreePBX IAX Trunk: endpoints/pbx/freepbx/configure-iax-trunk.md
+          - Configure FreePBX SIP Trunk: endpoints/pbx/freepbx/configure-sip-trunk.md
+          - FreePBX/Asterisk Feature Codes: endpoints/pbx/freepbx/feature-codes.md
+        - 3CX PBX:
+          - Configure 3CX Trunk: endpoints/pbx/3cx/configure-3cx-trunk.md
+    - Other:
+      - Configure an RF Link: other/configure-rf-links.md
+      - Configure Audio Services: General/coming-soon.md
+      - Configure BLF on Cisco Phones: other/configure-blf.md
+
+  - Files (Right Click and Select Save File As):
+    - Side Car Template: files/SideCar_Template_A4.xls
+    - Phone Wallpaper: wallpaper/wallpaper.md 
+
+  - Wiki:
+    - Contributing: 
+      - Overview of the Wiki: wiki/overview.md
+      - How to Contribute: wiki/contributing.md
+
+  - Changelog: General/changelog.md
+
+extra:
+  social:
+    - icon: 'fontawesome/brands/discord'
+      link: 'https://discord.gg/npwFgnj2vU'
+    - icon: 'fontawesome/brands/telegram'
+      link: 'https://t.me/hamsoverip'
+    - icon: 'fontawesome/brands/twitter'
+      link: 'https://twitter.com/hamsoverip'
+    - icon: 'fontawesome/brands/mastodon'
+      link: 'https://mastodon.radio/@hamsoverip'
+    - icon: 'fontawesome/brands/facebook'
+      link: 'https://www.facebook.com/hamsoverip'
+    - icon: 'fontawesome/brands/snapchat'
+      link: 'https://www.snapchat.com/add/hamsoverip?share_id=Zb3vtgDNUCU&locale=en-US'  
+    - icon: 'fontawesome/brands/reddit'
+      link: 'https://www.reddit.com/r/hamsoverip/'      
